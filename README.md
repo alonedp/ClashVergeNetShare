@@ -106,7 +106,7 @@ Clash Verge Rev supports Linux, Windows and macOS. :contentReference[oaicite:0]{
 Download the configuration file from this project:
 
 ```
-https://github.com/alonedp/ClashVergeNetShare/blob/main/NetShare.yaml
+https://raw.githubusercontent.com/alonedp/alonedp/refs/heads/main/netshare.yaml
 ```
 
 
@@ -178,7 +178,7 @@ https://github.com/alonedp/ClashVergeNetShare/tree/main
 Configuration:
 
 ```
-https://github.com/alonedp/ClashVergeNetShare/blob/main/NetShare.yaml
+https://raw.githubusercontent.com/alonedp/alonedp/refs/heads/main/netshare.yaml
 ```
 
 
