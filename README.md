@@ -19,15 +19,6 @@ This project is made for devices that cannot use normal WiFi sharing or hotspot 
 
 It allows Linux systems to route all network traffic through an Android phone using NetShare HTTP Proxy.
 
-```
-Android (NetShare)
-        │
-        │ HTTP Proxy
-        ▼
-Linux → Clash Verge Rev → Mihomo TUN → Internet
-```
-
-
 ## ✦ Features
 
 ```
@@ -55,18 +46,12 @@ Required:
 
 
 ### Android
-
-Install:
-
-```
-NetShare - no-root-tethering
-```
-
-Enable:
+[Install NetShare](https://play.google.com/store/apps/details?id=kha.prog.mikrotik&hl=en)
 
 ```
-✓ WiFi sharing
-✓ HTTP Proxy
+Connect to Wi-Fi
+Open NetShare
+✓ Enable WiFi HotSpot
 ```
 
 Default proxy:
@@ -98,7 +83,7 @@ Other distributions:
 
 Download the correct package from the official releases page.
 
-Clash Verge Rev supports Linux, Windows and macOS. :contentReference[oaicite:0]{index=0}
+Clash Verge Rev supports Linux, Windows and macOS.
 
 
 ## ✦ Configuration
