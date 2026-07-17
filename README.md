@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/alonedp/ClashVergeNetShare/blob/main/clashvergenetshare.png">
+  <img src="https://raw.githubusercontent.com/alonedp/ClashVergeNetShare/main/ClashVergeNetShare.png">
 </p>
 
 <h1 align="center">
