@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/alonedp/alonedp/blob/main/webscrapper.png">
+  <img src="https://github.com/alonedp/ClashVergeNetShare/blob/main/clashvergenetshare.png">
 </p>
 
 <h1 align="center">
@@ -106,7 +106,7 @@ Clash Verge Rev supports Linux, Windows and macOS. :contentReference[oaicite:0]{
 Download the configuration file from this project:
 
 ```
-https://github.com/alonedp/ClashVerfeNetShare/blob/main/netshare.yaml
+https://github.com/alonedp/ClashVergeNetShare/blob/main/NetShare.yaml
 ```
 
 
@@ -115,7 +115,7 @@ Import into Clash Verge Rev:
 ```
 Profiles
    └── Import
-          └── Select netshare.yaml
+          └── Paste NetShare.yaml URL
 ```
 
 
@@ -171,14 +171,14 @@ If the page loads successfully:
 Repository:
 
 ```
-https://github.com/alonedp/ClashVerfeNetShare/tree/main
+https://github.com/alonedp/ClashVergeNetShare/tree/main
 ```
 
 
 Configuration:
 
 ```
-https://github.com/alonedp/ClashVerfeNetShare/blob/main/netshare.yaml
+https://github.com/alonedp/ClashVergeNetShare/blob/main/NetShare.yaml
 ```
 
 
