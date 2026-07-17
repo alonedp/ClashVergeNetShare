@@ -2,54 +2,86 @@
   <img src="https://github.com/alonedp/alonedp/blob/main/webscrapper.png">
 </p>
 
-# Mihomo TUN Mode + NetShare Proxy (Linux)
+<h1 align="center">
+  ╭━━━ ✦ Mihomo TUN Mode + NetShare Proxy ✦ ━━━╮
+</h1>
 
-A simple Mihomo/Clash Verge Rev configuration for sharing Android VPN connections with Linux through NetShare.
-
-This project is designed for devices that cannot use normal WiFi sharing or hotspot features.  
-It allows Linux systems to route all network traffic through an Android device using NetShare.
-
-## Features
-
-• Mihomo TUN mode support  
-• Automatic routing through Clash Verge Rev  
-• DNS handling with Mihomo  
-• Android NetShare HTTP proxy support  
-• Designed for Linux systems
+<p align="center">
+  Linux traffic routing through Android NetShare using Clash Verge Rev + Mihomo
+</p>
 
 
-## Requirements
+## ✦ About
+
+A lightweight Mihomo configuration for sharing Android VPN connections with Linux through NetShare.
+
+This project is made for devices that cannot use normal WiFi sharing or hotspot features.
+
+It allows Linux systems to route all network traffic through an Android phone using NetShare HTTP Proxy.
+
+```
+Android (NetShare)
+        │
+        │ HTTP Proxy
+        ▼
+Linux → Clash Verge Rev → Mihomo TUN → Internet
+```
+
+
+## ✦ Features
+
+```
+✦ Mihomo TUN mode
+✦ Full system traffic routing
+✦ Android NetShare support
+✦ Automatic DNS handling
+✦ Clash Verge Rev GUI control
+✦ Linux focused configuration
+```
+
+
+## ✦ Requirements
 
 ### Linux
 
 Required:
 
-- Linux distribution (Arch, Debian, Ubuntu, Fedora, etc.)
-- sudo/root access
-- NetworkManager
-- systemd-resolved (recommended)
+```
+✓ Linux distribution
+✓ sudo/root access
+✓ NetworkManager
+✓ systemd-resolved (recommended)
+```
 
 
 ### Android
 
 Install:
 
+```
 NetShare - no-root-tethering
+```
 
 Enable:
 
-• WiFi sharing  
-• HTTP Proxy
+```
+✓ WiFi sharing
+✓ HTTP Proxy
+```
 
 Default proxy:
 
 ```
-Address: 192.168.49.1
-Port: 8282
+Address : 192.168.49.1
+Port    : 8282
 ```
 
 
-## Install Clash Verge Rev
+## ✦ Install Clash Verge Rev
+
+Official project:
+
+https://github.com/clash-verge-rev/clash-verge-rev
 
 Download:
 
@@ -62,24 +94,32 @@ Arch Linux:
 yay -S clash-verge-rev
 ```
 
-or install the package from the official releases page.
+Other distributions:
+
+Download the correct package from the official releases page.
+
+Clash Verge Rev supports Linux, Windows and macOS. :contentReference[oaicite:0]{index=0}
 
 
-## Configuration
+## ✦ Configuration
 
-Download the project configuration:
+Download the configuration file from this project:
 
-https://github.com/alonedp/alonedp/blob/main/netshare.yaml
+```
+https://github.com/alonedp/ClashVerfeNetShare/blob/main/netshare.yaml
+```
 
 
 Import into Clash Verge Rev:
 
 ```
-Profiles → Import → Select netshare.yaml
+Profiles
+   └── Import
+          └── Select netshare.yaml
 ```
 
 
-## Clash Verge Settings
+## ✦ Clash Verge Settings
 
 Enable:
 
@@ -89,10 +129,11 @@ Enable:
 ✓ Service Mode
 ```
 
+
 Select the imported profile and start Mihomo.
 
 
-## Verify Installation
+## ✦ Verify
 
 Check TUN interface:
 
@@ -100,7 +141,8 @@ Check TUN interface:
 ip addr | grep Mihomo
 ```
 
-Expected output:
+
+Expected:
 
 ```
 Mihomo: UP
@@ -114,16 +156,48 @@ Test connection:
 curl http://example.com
 ```
 
-If the page loads, the tunnel is working correctly.
+
+If the page loads successfully:
+
+```
+✓ Tunnel is working
+✓ DNS is working
+✓ Traffic is routed through NetShare
+```
 
 
-## Project Repository
+## ✦ Project Links
 
 Repository:
 
-https://github.com/alonedp/alonedp
+```
+https://github.com/alonedp/ClashVerfeNetShare/tree/main
+```
 
 
-Configuration file:
+Configuration:
 
-https://github.com/alonedp/alonedp/blob/main/netshare.yaml
+```
+https://github.com/alonedp/ClashVerfeNetShare/blob/main/netshare.yaml
+```
+
+
+## ✦ Credits
+
+Built with:
+
+```
+✦ Clash Verge Rev
+✦ Mihomo Core
+✦ NetShare Android
+✦ Linux TUN Networking
+```
+
+
+<p align="center">
+  ✧ ─────────────── ✦ ─────────────── ✧
+</p>
+
+<p align="center">
+  Made for Linux users who need simple Android-to-PC network sharing.
+</p>
