@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  Mihomo TUN Mode + NetShare Proxy
+  ClashVergeNetShare
 </h1>
 
 <p align="center">
