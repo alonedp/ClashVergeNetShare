@@ -64,13 +64,13 @@ Profiles
 ## Clash Verge Settings
 
 Enable:
-
-✓ System Proxy or TUN Mode
-✓ Enable ClashVerge Service
+Enable ClashVerge Service
 
 ```
 sudo systemctl start clash-verge-service.service
 ```
+
+System TUN Mode
 
 Select the imported profile and start TUN(Mihomo).
 
