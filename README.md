@@ -63,18 +63,17 @@ Profiles
 
 ## Clash Verge Settings
 
-Enable:
-Enable ClashVerge Service
+1. Enable ClashVerge Service
 
 ```
 sudo systemctl start clash-verge-service.service
 ```
 
-System TUN Mode
+2. System TUN Mode
 
-Select the imported profile and start TUN(Mihomo).
+3. Select the imported profile and start TUN.
 
-Check TUN interface:
+4. Check TUN interface:
 
 ```bash
 ip addr | grep Mihomo
@@ -96,11 +95,12 @@ curl http://example.com
 
 If the page loads successfully:
 
-```
-✓ Tunnel is working
-✓ DNS is working
-✓ Traffic is routed through NetShare
-```
+❗️ Tunnel is working
+
+❗️ DNS is working
+
+❗️ Traffic is routed through NetShare
+
 
 <p align="center">
   Made for Linux users who need simple Android-to-PC network sharing.
