@@ -30,8 +30,7 @@ It allows Linux systems to route all network traffic through an Android phone us
 - Linux focused configuration
 ```
 
-### Install NetShare
-[NetShare](https://play.google.com/store/apps/details?id=kha.prog.mikrotik&hl=en)
+### Install [NetShare](https://play.google.com/store/apps/details?id=kha.prog.mikrotik&hl=en)
 
 ```
 Connect to Wi-Fi
@@ -46,8 +45,7 @@ Address : 192.168.49.1
 Port    : 8282
 ```
 
-## Install ClashVerge
-[ClashVerge](https://github.com/clash-verge-rev/clash-verge-rev)
+## Install [ClashVerge](https://github.com/clash-verge-rev/clash-verge-rev)
 
 Copy URL:
 ```
