@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  ╭━━━ ✦ Mihomo TUN Mode + NetShare Proxy ✦ ━━━╮
+  Mihomo TUN Mode + NetShare Proxy
 </h1>
 
 <p align="center">
@@ -11,7 +11,7 @@
 </p>
 
 
-## ✦ About
+## About
 
 A lightweight Mihomo configuration for sharing Android VPN connections with Linux through NetShare.
 
@@ -19,39 +19,24 @@ This project is made for devices that cannot use normal WiFi sharing or hotspot 
 
 It allows Linux systems to route all network traffic through an Android phone using NetShare HTTP Proxy.
 
-## ✦ Features
+## Features
 
 ```
-✦ Mihomo TUN mode
-✦ Full system traffic routing
-✦ Android NetShare support
-✦ Automatic DNS handling
-✦ Clash Verge Rev GUI control
-✦ Linux focused configuration
+- Mihomo TUN mode
+- Full system traffic routing
+- Android NetShare support
+- Automatic DNS handling
+- Clash Verge Rev GUI control
+- Linux focused configuration
 ```
 
-
-## ✦ Requirements
-
-### Linux
-
-Required:
-
-```
-✓ Linux distribution
-✓ sudo/root access
-✓ NetworkManager
-✓ systemd-resolved (recommended)
-```
-
-
-### Android
-[Install NetShare](https://play.google.com/store/apps/details?id=kha.prog.mikrotik&hl=en)
+### Install NetShare
+[NetShare](https://play.google.com/store/apps/details?id=kha.prog.mikrotik&hl=en)
 
 ```
 Connect to Wi-Fi
 Open NetShare
-✓ Enable WiFi HotSpot
+✓ Enable "Share WiFi HotSpot"
 ```
 
 Default proxy:
@@ -61,39 +46,13 @@ Address : 192.168.49.1
 Port    : 8282
 ```
 
+## Install ClashVerge
+[ClashVerge](https://github.com/clash-verge-rev/clash-verge-rev)
 
-## ✦ Install Clash Verge Rev
-
-Official project:
-
-https://github.com/clash-verge-rev/clash-verge-rev
-
-Download:
-
-https://github.com/clash-verge-rev/clash-verge-rev/releases
-
-
-Arch Linux:
-
-```bash
-yay -S clash-verge-rev
+Copy URL:
 ```
-
-Other distributions:
-
-Download the correct package from the official releases page.
-
-Clash Verge Rev supports Linux, Windows and macOS.
-
-
-## ✦ Configuration
-
-Download the configuration file from this project:
-
+https://raw.githubusercontent.com/alonedp/ClashVergeNetShare/refs/heads/main/NetShare.yaml
 ```
-https://raw.githubusercontent.com/alonedp/alonedp/refs/heads/main/netshare.yaml
-```
-
 
 Import into Clash Verge Rev:
 
@@ -104,21 +63,18 @@ Profiles
 ```
 
 
-## ✦ Clash Verge Settings
+## Clash Verge Settings
 
 Enable:
 
+✓ System Proxy or TUN Mode
+✓ Enable ClashVerge Service
+
 ```
-✓ System Proxy
-✓ TUN Mode
-✓ Service Mode
+sudo systemctl start clash-verge-service.service
 ```
 
-
-Select the imported profile and start Mihomo.
-
-
-## ✦ Verify
+Select the imported profile and start TUN(Mihomo).
 
 Check TUN interface:
 
@@ -126,14 +82,12 @@ Check TUN interface:
 ip addr | grep Mihomo
 ```
 
-
 Expected:
 
 ```
 Mihomo: UP
 inet 198.18.0.1/30
 ```
-
 
 Test connection:
 
@@ -149,39 +103,6 @@ If the page loads successfully:
 ✓ DNS is working
 ✓ Traffic is routed through NetShare
 ```
-
-
-## ✦ Project Links
-
-Repository:
-
-```
-https://github.com/alonedp/ClashVergeNetShare/tree/main
-```
-
-
-Configuration:
-
-```
-https://raw.githubusercontent.com/alonedp/alonedp/refs/heads/main/netshare.yaml
-```
-
-
-## ✦ Credits
-
-Built with:
-
-```
-✦ Clash Verge Rev
-✦ Mihomo Core
-✦ NetShare Android
-✦ Linux TUN Networking
-```
-
-
-<p align="center">
-  ✧ ─────────────── ✦ ─────────────── ✧
-</p>
 
 <p align="center">
   Made for Linux users who need simple Android-to-PC network sharing.
