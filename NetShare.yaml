@@ -13,7 +13,7 @@ tun:
   auto-detect-interface: true
 
 dns:
-  enable: true
+  enable: false
   listen: 0.0.0.0:1053
   ipv6: false
   enhanced-mode: fake-ip
